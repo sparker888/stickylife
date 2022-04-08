@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { Fragment, useState } from 'react'
-import { Dialog, Popover, Tab, Transition, Menu } from '@headlessui/react'
+import { Dialog, Popover, Tab, Transition, Menu, RadioGroup } from '@headlessui/react'
 import { MenuIcon, QuestionMarkCircleIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
 import { StarIcon, ChevronDownIcon } from '@heroicons/react/solid'
 
@@ -14,25 +14,25 @@ const navigation = {
       featured: [
         {
           name: 'Paper Stickers',
-          href: '#',
+          href: '../page-3/',
           imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648567859/Custom-Paper-Stickers_wmti9a.jpg',
           imageAlt: 'Stickers you remember as a kid and the type your parents hated to clean up afterwards.',
         },
         {
           name: 'Vinyl Stickers',
-          href: '#',
+          href: '../page-3/',
           imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648567918/circle-vinyl-sticker_eidzkj.jpg',
           imageAlt: 'This is what most people are likely looking for when shopping for stickers.',
         },
         {
           name: 'Reflective Stickers',
-          href: '#',
+          href: '../page-3/',
           imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648567954/Reflective-StickerSheets_hd14ud.jpg',
           imageAlt: 'Custom reflective stickers as an option for high visibility in low light scenarios.',
         },
         {
           name: 'Various Shapes',
-          href: '#',
+          href: '../page-3/',
           imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648502160/custom-stickers_opcjbp.jpg',
           imageAlt: 'Model opening tan leather long wallet with credit card pockets and cash pouch.',
         },
@@ -229,14 +229,44 @@ const reviews = {
 }
 const faqs = [
   {
-    question: 'What format are these icons?',
+    question: 'What are the parts of a personalized decal?',
     answer:
-      'The icons are in SVG (Scalable Vector Graphic) format. They can be imported into your design tool of choice and used directly in code.',
+      'When you purchase a custom decal from StickyLife you can expect your graphic to be sandwiched between a release liner and transfer tape. The transfer tape makes application easy. See our decal application how-to video to learn more. To learn more about how to apply vinyl decals checkout our learning center.',
   },
   {
-    question: 'Can I use the icons at different sizes?',
+    question: 'What surfaces can I apply a vinyl decal to?',
     answer:
-      "Yes. The icons are drawn on a 24 x 24 pixel grid, but the icons can be scaled to different sizes as needed. We don't recommend going smaller than 20 x 20 or larger than 64 x 64 to retain legibility and visual balance.",
+      "Apply your custom vinyl decal onto smooth surfaces like wood, glass, high gloss plastic and metal. Generally if the surface is clean and smooth you shouldn't have any difficulties. Lightly textured surfaces like some plastics can be a difficult if not impossible to apply to.",
+  },
+  {
+    question: 'What is the adhesive that you use?',
+    answer:
+      "By default our adhesive is applied to the backside of our decals but can be applied to the front side of your design upon request. The adhesive we use is solvent based and is ideal for outdoor use because it will not breakdown when in coming into contact with water.",
+  },
+  {
+    question: 'Is there a minimum quantity on orders?',
+    answer:
+      "StickyLife offers No Minimum quantity limits so you can buy custom decals as a test run before placing a larger order. Because we have no minimums you can also purchase a small batch to test which designs sells best with your customers, if your reselling.",
+  },
+  {
+    question: 'How do you price your vinyl decals?',
+    answer:
+      "Price is largely based on size and quantity. Your unit price will drop as you order larger quantities. Learn more about Quantity Discount Levels.",
+  },
+  {
+    question: 'How do vinyl decals hold up in weather conditions?',
+    answer:
+      "When you shop for custom vinyl decals consider what kind of adhesive is used. If they are not made from vinyl and don't use acrylic based adhesive, there is no guarantee they will work outside for very long if they're not. All of our decals are made from vinyl and use solvent based adhesives for outdoor use. Because we make our decals this way you can expect them to withstand most weathering conditions for up to 5 years. After about 5 years you might start to notice some subtle color fading. After about 5 years the color fading will be very noticeable and the decal may start to crack in certain spots. This of course is based on how much sun exposure and type of usage the decal goes through. Customers who use their decals indoors will experience a much longer lifespan.",
+  },
+  {
+    question: 'What is the process once I submit my design?',
+    answer:
+      "Apply your custom vinyl decal onto smooth surfaces like wood, glass, high gloss plastic and metal. Generally if the surface is clean and smooth you shouldn't have any difficulties. Lightly textured surfaces like some plastics can be a difficult if not impossible to apply to.",
+  },
+  {
+    question: 'How long is the turnaround time?',
+    answer:
+      "Turnaround time for all custom and personalized decal orders are based on the shipping method that you select during checkout. We suggest providing us with at least 10 business days for large volume orders.",
   },
   // More FAQs...
 ]
@@ -261,30 +291,30 @@ const tape = {
     'Transfer tape is the material applied on top of your printed graphic. It is intended to help with application for various reasons. Imagine if your design contained individual cut letters or included a complex or intricate shape, the transfer tape helps lift your cut vinyl design off the liner in one piece so you can transfer it to your application surface with ease. It also helps make large format graphics easier to apply. Transfer tape is not necessarily needed for small and simple cut shapes like circles and squares but is recommended for shapes like stars and clovers.',
 }
 
-const footerNavigation = {
-  styleguide: [
-    { name: 'Featured Artists', href: '#' },
-    { name: 'Get Featured', href: '#' },
-    { name: 'Design Ideas', href: '#' },
-    { name: 'How Tos and Tips', href: '#' },
-    { name: 'Promotions', href: '#' },
-    { name: 'Trending Designs', href: '#' },
-  ],
-  policies: [
-    { name: 'Payment policy', href: '#' },
-    { name: 'Shipping policy', href: '#' },
-    { name: 'Refunds/Returns', href: '#' },
-    { name: 'Terms of service', href: '#' },
-    { name: 'Your privacy', href: '#' },
-  ],
-  customerService: [
-    { name: '1-800-356-8904', href: '#' },
-    { name: 'Hours: 8am - 5pm ET', href: '#' },
-    { name: 'info@stickylife.com', href: '#' },
-    { name: '7868 US-70 Bus Suite D Clayton, NC 27520 USA', href: '#' },
-    { name: 'About StickyLife', href: '#' },
+const colorchart = {
+  colors: [
+    { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
+    { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
+    { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
+    { name: 'Orange', class: 'bg-orange-500', selectedClass: 'ring-gray-400' },
+    { name: 'Yellow', class: 'bg-yellow-500', selectedClass: 'ring-gray-400' },
+    { name: 'Lime', class: 'bg-lime-500', selectedClass: 'ring-gray-400' },
+    { name: 'Green', class: 'bg-green-500', selectedClass: 'ring-gray-400' },
+    { name: 'Teal', class: 'bg-teal-500', selectedClass: 'ring-gray-400' },
+    { name: 'Cyan', class: 'bg-cyan-500', selectedClass: 'ring-gray-400' },
+    { name: 'Blue', class: 'bg-blue-500', selectedClass: 'ring-gray-400' },
+    { name: 'Purple', class: 'bg-purple-500', selectedClass: 'ring-gray-400' },
   ],
 }
+
+const process = [
+  { name: '1. Order Placement', description: 'Our website has all the tools you need to design your custom vinyl decal including choice of color, shape, size, quantity and tape transfer.' },
+  { name: '2. Pre-Production', description: 'During this process we review your design settings. Image quality and prep your order by adding cutlines, bleeds and more to your print file..' },
+  { name: '3. Production', description: 'The production process is just about like one might imagine. We send your files through the appropriate printing process for your order. Most decals are combined with other orders for larger job runs.' },
+  { name: '4. Post-Production', description: 'After Production your order goes through a quality review process to determine if the outcome was as it should be. If your custom vinyl decals do not pass it will then need to go back into production.' },
+  { name: '5. Packing and Shipping', description: 'Normcore af wayfarers, pabst tbh tilde kitsch shaman hall of succulents letterpress chartreuse.' },
+  { name: '6. Receipt of Package', description: 'Once you receive your order, please check it carefully. If you\'re satisfied with the results we would appreciate your positive review.' },
+]
 
 const trendingProducts = [
   {
@@ -292,7 +322,7 @@ const trendingProducts = [
     name: 'Custom Vinyl Decals',
     color: 'No minimum quantity limits.',
     price: '100+ decal shapes to choose from.',
-    href: '#',
+    href: '../page-3/',
     imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648495732/decal-application_1_fsshzf.webp',
     imageAlt: 'Hand stitched, orange leather long wallet.',
   },
@@ -363,12 +393,38 @@ const trendingProducts = [
   // More products...
 ]
 
+const footerNavigation = {
+  styleguide: [
+    { name: 'Featured Artists', href: '#' },
+    { name: 'Get Featured', href: '#' },
+    { name: 'Design Ideas', href: '#' },
+    { name: 'How Tos and Tips', href: '#' },
+    { name: 'Promotions', href: '#' },
+    { name: 'Trending Designs', href: '#' },
+  ],
+  policies: [
+    { name: 'Payment policy', href: '#' },
+    { name: 'Shipping policy', href: '#' },
+    { name: 'Refunds/Returns', href: '#' },
+    { name: 'Terms of service', href: '#' },
+    { name: 'Your privacy', href: '#' },
+  ],
+  customerService: [
+    { name: '1-800-356-8904', href: '#' },
+    { name: 'Hours: 8am - 5pm ET', href: '#' },
+    { name: 'info@stickylife.com', href: '#' },
+    { name: '7868 US-70 Bus Suite D Clayton, NC 27520 USA', href: '#' },
+    { name: 'About StickyLife', href: '#' },
+  ],
+}
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Product() {
   const [open, setOpen] = useState(false)
+  const [selectedColor, setSelectedColor] = useState(colorchart.colors[0])
 
   return (
     <div className="bg-white">
@@ -601,7 +657,7 @@ export default function Product() {
                               <div className="relative flex">
                                 <Popover.Button
                                   className={classNames(
-                                    open ? 'text-cyan-500' : 'font-semibold text-cyan-900 hover:text-orange-600',
+                                    open ? 'text-cyan-500' : 'font-bold text-black hover:text-orange-600',
                                     'relative flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium'
                                   )}
                                 >
@@ -676,7 +732,7 @@ export default function Product() {
                         <a
                           key={page.name}
                           href={page.href}
-                          className="flex items-center text-sm font-semibold text-cyan-900 hover:text-orange-600"
+                          className="flex items-center text-sm font-bold text-black hover:text-orange-600"
                         >
                           {page.name}
                         </a>
@@ -747,7 +803,7 @@ export default function Product() {
         </nav>
       </header>
 
-      <div className="mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto py-16 px-4 sm:pt-24 sm:pb-5 sm:px-6 lg:max-w-7xl lg:px-8">
         {/* Product */}
         <div className="lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
           {/* Product image */}
@@ -781,8 +837,46 @@ export default function Product() {
               <h3 className="text-sm font-medium text-gray-900">graphic shows up in here</h3>
             </div>
 
-            {/* Menu Selections */}
-            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-5">
+            <form className="mt-10 -z-10">
+              {/* Colors */}
+              <div>
+                <h3 className="text-sm text-gray-900 font-medium">Color</h3>
+
+                <RadioGroup value={selectedColor} onChange={setSelectedColor} className="mt-4">
+                  <RadioGroup.Label className="sr-only">Choose a color</RadioGroup.Label>
+                  <div className="flex items-center space-x-3">
+                    {colorchart.colors.map((color) => (
+                      <RadioGroup.Option
+                        key={color.name}
+                        value={color}
+                        className={({ active, checked }) =>
+                          classNames(
+                            color.selectedClass,
+                            active && checked ? 'ring ring-offset-1' : '',
+                            !active && checked ? 'ring-2' : '',
+                            '-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none'
+                          )
+                        }
+                      >
+                        <RadioGroup.Label as="p" className="sr-only">
+                          {color.name}
+                        </RadioGroup.Label>
+                        <span
+                          aria-hidden="true"
+                          className={classNames(
+                            color.class,
+                            'h-8 w-8 border border-black border-opacity-10 rounded-full'
+                          )}
+                        />
+                      </RadioGroup.Option>
+                    ))}
+                  </div>
+                </RadioGroup>
+              </div>
+            </form>
+
+            {/* Customization Dropdowns */}
+            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-4">
 
             {/* Shape Selector*/}
             <Menu as="div" className="relative inline-block text-left">
@@ -887,7 +981,7 @@ export default function Product() {
               </Transition>
             </Menu>
 
-            {/* Shape Selector*/}
+            {/* Size Selector*/}
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-cyan-500">
@@ -969,70 +1063,6 @@ export default function Product() {
                           )}
                         >
                           15" x 15"
-                        </a>
-                      )}
-                    </Menu.Item>
-                  </div>
-                </Menu.Items>
-              </Transition>
-            </Menu>
-
-            {/* Color Selector*/}
-            <Menu as="div" className="relative inline-block text-left">
-              <div>
-                <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-cyan-500">
-                  Color
-                  <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
-                </Menu.Button>
-              </div>
-
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  <div className="py-1">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#"
-                          className={classNames(
-                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                            'block px-4 py-2 text-sm'
-                          )}
-                        >
-                          Color #1
-                        </a>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#"
-                          className={classNames(
-                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                            'block px-4 py-2 text-sm'
-                          )}
-                        >
-                          Color #2
-                        </a>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#"
-                          className={classNames(
-                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                            'block px-4 py-2 text-sm'
-                          )}
-                        >
-                          Color #3
                         </a>
                       )}
                     </Menu.Item>
@@ -1291,15 +1321,13 @@ export default function Product() {
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
               <button
                 type="button"
-                className="w-full bg-cyan-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500"
-              >
+                className="w-full bg-cyan-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500">
                 Customize It
               </button>
               <button
                 type="button"
-                className="w-full bg-cyan-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500"
-              >
-                Add to Cart
+                className="w-full bg-cyan-500 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-red-500">
+                <Link to="../page-4/">Add to Cart</Link>
               </button>
             </div>
 
@@ -1499,7 +1527,7 @@ export default function Product() {
 
                   {faqs.map((faq) => (
                     <Fragment key={faq.question}>
-                      <dt className="mt-10 font-medium text-gray-900">{faq.question}</dt>
+                      <dt className="mt-10 font-bold text-gray-900">{faq.question}</dt>
                       <dd className="mt-2 prose prose-sm max-w-none text-cyan-900">
                         <p>{faq.answer}</p>
                       </dd>
@@ -1512,12 +1540,40 @@ export default function Product() {
         </div>
       </div>
 
+      {/* Process section */}
+      <div aria-hidden="true" className="relative">
+        <img
+          src="https://res.cloudinary.com/gravital-digital/image/upload/v1649359447/printing-presses_bkrl6l.jpg"
+          alt=""
+          className="w-full h-96 object-center object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-white" />
+      </div>
+
+      <div className="relative -mt-12 max-w-7xl mx-auto pb-16 px-4 sm:pb-6 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-4xl">StickyLife.com Order Progression</h2>
+          <p className="mt-4 text-cyan-900">
+          If you've come to make, create or design your own decals then you've come to the right place. Every custom order we receive goes through a quality-controlled production process. We're not satisfied with any order until you are!
+          </p>
+        </div>
+
+        <dl className="mt-16 max-w-2xl mx-auto grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
+          {process.map((step) => (
+            <div key={step.name} className="border-t border-gray-200 pt-4">
+              <dt className="font-bold text-black">{step.name}<span aria-hidden="true"> &rarr;</span></dt>
+              <dd className="mt-2 text-sm text-cyan-900">{step.description}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+
       {/* Trending products section */}
       <section aria-labelledby="trending-heading">
           <div className="bg-contain bg-[url('https://res.cloudinary.com/gravital-digital/image/upload/v1648503475/color-background_m2vfv2.jpg')]">
-            <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 sm:py-32 lg:pt-32 lg:px-8">
+            <div className="max-w-7xl mx-auto pt-6 pb-24 px-4 sm:px-6 sm:py-32 lg:pt-32 lg:px-8">
               <div className="md:flex md:items-center md:justify-between">
-                <h2 id="favorites-heading" className="text-2xl font-extrabold tracking-tight text-cyan-900">
+                <h2 id="favorites-heading" className="text-2xl font-black tracking-tight text-black">
                   Trending StickyLife Products
                 </h2>
                 <a href="#" className="hidden text-sm font-medium text-cyan-900 hover:text-orange-600 md:block">
@@ -1535,14 +1591,14 @@ export default function Product() {
                         className="w-full h-full object-center object-cover"
                       />
                     </div>
-                    <h3 className="mt-4 text-semibold text-cyan-900">
+                    <h3 className="mt-4 font-black text-black">
                       <a href={product.href}>
                         <span className="absolute inset-0" />
                         {product.name}
                       </a>
                     </h3>
                     <p className="mt-1 text-sm text-red-800">{product.color}</p>
-                    <p className="mt-1 text-sm font-medium text-gray-900">{product.price}</p>
+                    <p className="mt-1 text-sm font-medium text-cyan-900">{product.price}</p>
                   </div>
                 ))}
               </div>
@@ -1577,7 +1633,7 @@ export default function Product() {
               <div className="mt-10 col-span-6 grid grid-cols-2 gap-8 sm:grid-cols-3 md:mt-0 md:row-start-1 md:col-start-3 md:col-span-8 lg:col-start-2 lg:col-span-6">
                 <div className="grid grid-cols-1 gap-y-12 sm:col-span-2 sm:grid-cols-2 sm:gap-x-8">
                   <div>
-                    <h3 className="text-sm font-semibold text-cyan-900">Style Guide</h3>
+                    <h3 className="text-sm font-bold text-black">Style Guide</h3>
                     <ul role="list" className="mt-6 space-y-6">
                       {footerNavigation.styleguide.map((item) => (
                         <li key={item.name} className="text-sm">
@@ -1589,7 +1645,7 @@ export default function Product() {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold text-cyan-900">Help</h3>
+                    <h3 className="text-sm font-bold text-black">Help</h3>
                     <ul role="list" className="mt-6 space-y-6">
                       {footerNavigation.policies.map((item) => (
                         <li key={item.name} className="text-sm">
@@ -1602,7 +1658,7 @@ export default function Product() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-cyan-900">Customer Service</h3>
+                  <h3 className="text-sm font-bold text-black">Customer Service</h3>
                   <ul role="list" className="mt-6 space-y-6">
                     {footerNavigation.customerService.map((item) => (
                       <li key={item.name} className="text-sm">
@@ -1651,7 +1707,7 @@ export default function Product() {
           </div>
 
           <div className="border-t border-gray-100 py-10 text-center">
-            <p className="text-sm text-gray-500">All Content Copyright © 2009-2022 stickylife.com Use of this web site constitutes acceptance of the Terms of Service and Privacy Policy</p>
+            <p className="text-sm text-black">All Content Copyright © 2009-2022 stickylife.com Use of this web site constitutes acceptance of the Terms of Service and Privacy Policy</p>
           </div>
         </div>
       </footer>
