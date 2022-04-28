@@ -22,6 +22,8 @@ const IndexPage = () => (
     <p>
       <Link to="/page-2/">Go to Home Page Mockup</Link> <br />
       <Link to="/page-3/">Go to Category Page Mockup"</Link>
+      <Link to="/page-4/">Go to Check Out Page Mockup"</Link>
+      <Link to="/page-5/">Go to Confirmation Page Mockup"</Link>
     </p>
   </Layout>
 )
