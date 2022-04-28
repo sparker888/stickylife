@@ -8,7 +8,7 @@
   Gatsby Websites Explained
 </h1>
 
-This project with a default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This project started with a default Gatsby boilerplate. This allows us to start with the main Gatsby configuration files needed to get up and running blazing fast with the blazing fast app generator for React.
 
 ## 🚀 Quick start to work in your environment
 
