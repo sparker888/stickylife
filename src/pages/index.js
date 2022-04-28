@@ -25,6 +25,7 @@ const IndexPage = () => (
       <Link to="/page-4/">Go to Check Out Page Mockup</Link><br />
       <Link to="/page-5/">Go to Confirmation Page Mockup</Link><br />
       <Link to="/artist-page/">Go to Artist Page Mockup</Link><br />
+      <Link to="https://github.com/sparker888/stickylife">Project Repository</Link><br />
     </p>
   </Layout>
 )
