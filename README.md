@@ -14,7 +14,7 @@ This project started with a default Gatsby boilerplate. This allows us to start 
 
 1.  **Install Gatsby CLI on your system in a Node.js environment.**
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site in your development environment.
+    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to prepare and clone this site in your development environment.
 
     ```shell
     # Initialize git, clone of this repo and install the Node modules
@@ -26,7 +26,7 @@ This project started with a default Gatsby boilerplate. This allows us to start 
 
 2.  **Start the Gatsby dev server.**
 
-    Navigate into your new site’s directory and start it up.
+    From within the site’s directory, start up the local server.
 
     ```shell
     gatsby develop
@@ -34,11 +34,11 @@ This project started with a default Gatsby boilerplate. This allows us to start 
 
 3.  **View the site in a browser, open the source code and start editing!**
 
-    Your site is now running at `http://localhost:8000`!
+    The site should now be running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
 
-    Open the site directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the site directory in your code editor of choice and edit `src/pages/index.js` for example. Save your changes and the browser will update in real time!
 
 ## 🚀 Quick start (Gatsby Cloud)
 
@@ -88,7 +88,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
+## 🎓 Learning Gatsby and Tailwind
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
@@ -96,7 +96,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-- **For information and Tailwind, head [to Tailwind's documentation](https://tailwindcss.com/).** You can find many resources about Tailwind in many places on the web using a simple Google search.
+- **For information on Tailwind, head [to Tailwind's documentation](https://tailwindcss.com/).** You can find many resources about Tailwind in many places on the web using a simple Google search.
 
 ## 💫 Deploy
 
