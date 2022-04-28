@@ -504,8 +504,8 @@ export default function Product() {
               <div className="h-16 flex items-center justify-between">
                 {/* Logo (lg+) */}
                 <div className="hidden lg:flex-1 lg:flex lg:items-center">
-                  <a href="/page-2">
-                    <span className="sr-only">Workflow</span>
+                  <a href="/">
+                    <span className="sr-only">StickyLife</span>
                     <img
                       className="h-8 w-auto"
                       src="https://res.cloudinary.com/gravital-digital/image/upload/v1648486325/logo_qojvzx.svg"
@@ -629,7 +629,7 @@ export default function Product() {
 
                 {/* Logo (lg-) */}
                 <a href="#" className="lg:hidden">
-                  <span className="sr-only">Workflow</span>
+                  <span className="sr-only">StickyLife</span>
                   <img
                     src="https://res.cloudinary.com/gravital-digital/image/upload/v1648487162/sticky-foot_z0zkqz.png"
                     alt=""
