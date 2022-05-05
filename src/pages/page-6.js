@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, UserCircleIcon, SearchIcon, ShoppingCartIcon, XIcon } from '@heroicons/react/outline'
+import Secondary from '../components/Secondary'
 
 const navigation = {
   categories: [
@@ -12,119 +13,114 @@ const navigation = {
       name: 'Products',
       featured: [
         {
-          name: 'New Arrivals',
+          name: 'New Product',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg',
-          imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
+          imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648567859/Custom-Paper-Stickers_wmti9a.jpg',
+          imageAlt: 'Tousled polaroid tilde praxis poutine godard synth blue bottle.',
         },
         {
-          name: 'Basic Tees',
+          name: 'Another New Product',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg',
-          imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
+          imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648567918/circle-vinyl-sticker_eidzkj.jpg',
+          imageAlt: 'Tousled polaroid tilde praxis poutine godard synth blue bottle.',
         },
       ],
       sections: [
         {
-          id: 'clothing',
-          name: 'Clothing',
+          id: 'section-1',
+          name: 'Section 1',
           items: [
-            { name: 'Tops', href: '#' },
-            { name: 'Dresses', href: '#' },
-            { name: 'Pants', href: '#' },
-            { name: 'Denim', href: '#' },
-            { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
+            { name: 'Vinyl Decals', href: '#' },
+            { name: 'Reflective Stickers', href: '#' },
+            { name: 'Static Clings', href: '#' },
+            { name: 'Pin Backed Buttons', href: '#' },
+            { name: 'Banners', href: '#' },
           ],
         },
         {
-          id: 'accessories',
-          name: 'Accessories',
+          id: 'section-2',
+          name: 'Section 2',
           items: [
-            { name: 'Watches', href: '#' },
-            { name: 'Wallets', href: '#' },
-            { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
+            { name: 'Stickers', href: '#' },
+            { name: 'Apparel', href: '#' },
+            { name: 'Dog Tags', href: '#' },
+            { name: 'License Plates', href: '#' },
+            { name: 'Signs', href: '#' },
           ],
         },
         {
-          id: 'brands',
-          name: 'Brands',
+          id: 'section-3',
+          name: 'Section 3',
           items: [
-            { name: 'Full Nelson', href: '#' },
-            { name: 'My Way', href: '#' },
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Significant Other', href: '#' },
+            { name: 'Car Magnets', href: '#' },
+            { name: 'Temporary Tattoos', href: '#' },
+            { name: 'Key Chains', href: '#' },
+            { name: 'License Plate Frames', href: '#' },
+            { name: 'Accessories', href: '#' },
           ],
         },
       ],
     },
     {
       id: 'designs',
-      name: 'Designs',
+      name: 'Design Ideas',
       featured: [
         {
-          name: 'New Arrivals',
+          name: 'Design Idea One',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg',
-          imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
+          imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648567954/Reflective-StickerSheets_hd14ud.jpg',
+          imageAlt: 'Tousled polaroid tilde praxis poutine godard synth blue bottle.',
         },
         {
-          name: 'Artwork Tees',
+          name: 'Design Idea Two',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg',
+          imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648502160/custom-stickers_opcjbp.jpg',
           imageAlt:
-            'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
+            'Tousled polaroid tilde praxis poutine godard synth blue bottle.',
         },
       ],
       sections: [
         {
-          id: 'clothing',
-          name: 'Clothing',
+          id: 'section-1',
+          name: 'Section 1',
           items: [
-            { name: 'Tops', href: '#' },
-            { name: 'Pants', href: '#' },
-            { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
+            { name: 'Design Ideas', href: '#' },
+            { name: 'Sports', href: '#' },
+            { name: 'Home Decor', href: '#' },
+            { name: 'Animals', href: '#' },
+            { name: 'Religion', href: '#' },
+            { name: 'Multicultural', href: '#' },
           ],
         },
         {
-          id: 'accessories',
-          name: 'Accessories',
+          id: 'section-2',
+          name: 'Section 2',
           items: [
-            { name: 'Watches', href: '#' },
-            { name: 'Wallets', href: '#' },
-            { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
+            { name: 'Holidays', href: '#' },
+            { name: 'Public Service', href: '#' },
+            { name: 'Business', href: '#' },
+            { name: 'Special Events', href: '#' },
+            { name: 'Miscellaneous', href: '#' },
+            { name: 'Social Events', href: '#' },
           ],
         },
         {
-          id: 'brands',
-          name: 'Brands',
+          id: 'section-3',
+          name: 'Section 3',
           items: [
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Full Nelson', href: '#' },
-            { name: 'My Way', href: '#' },
+            { name: 'Trending', href: '#' },
+            { name: 'Clubs & Groups', href: '#' },
+            { name: 'Schools', href: '#' },
+            { name: 'Politics', href: '#' },
+            { name: 'Humor & Pop Culture', href: '#' },
+            { name: 'LGBT Community', href: '#' },
           ],
         },
       ],
     },
   ],
   pages: [
-    { name: 'Company', href: '#' },
-    { name: 'Stores', href: '#' },
+    { name: 'Learning Center', href: '#' },
   ],
 }
 
@@ -263,11 +259,11 @@ export default function Example() {
                 <div className="border-t border-gray-200 py-6 px-4">
                   <a href="#" className="-m-2 p-2 flex items-center">
                     <img
-                      src="https://tailwindui.com/img/flags/flag-canada.svg"
+                      src="https://tailwindui.com/img/flags/flag-united-states.svg"
                       alt=""
                       className="w-5 h-auto block flex-shrink-0"
                     />
-                    <span className="ml-3 block text-base font-medium text-gray-900">CAD</span>
+                    <span className="ml-3 block text-base font-medium text-gray-900">USA</span>
                     <span className="sr-only">, change currency</span>
                   </a>
                 </div>
@@ -317,9 +313,9 @@ export default function Example() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? 'border-indigo-600 text-indigo-600'
-                                  : 'border-transparent text-gray-700 hover:text-gray-800',
-                                'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
+                                  ? 'border-cyan-500 text-cyan-500'
+                                  : 'border-transparent text-black hover:text-gray-800',
+                                'relative z-10 flex items-center transition-colors ease-out duration-200 text-base font-bold border-b-2 -mb-px pt-px'
                               )}
                             >
                               {category.name}
@@ -398,7 +394,7 @@ export default function Example() {
                     <a
                       key={page.name}
                       href={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                      className="flex items-center text-base font-bold text-black hover:text-gray-800"
                     >
                       {page.name}
                     </a>
@@ -408,7 +404,7 @@ export default function Example() {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                  <a href="#" className="text-sm font-medium text-black hover:text-gray-800">
                     New Account
                   </a>
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
@@ -416,23 +412,23 @@ export default function Example() {
                 <div className="ml-4 flow-root lg:ml-6">
                   <a href="#" className="group -m-2 p-2 flex items-center">
                     <UserCircleIcon
-                      className="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                      className="flex-shrink-0 h-6 w-6 text-cyan-500 group-hover:text-blue-500"
                       aria-hidden="true"
                     />
-                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">Log In</span>
+                    <span className="ml-2 text-sm font-medium text-black group-hover:text-gray-800">Log In</span>
                     <span className="sr-only">Log In</span>
                   </a>
                 </div>
                 </div>
 
                 <div className="hidden lg:ml-8 lg:flex">
-                  <a href="#" className="text-gray-700 hover:text-gray-800 flex items-center">
+                  <a href="#" className="text-black hover:text-gray-800 flex items-center">
                     <img
-                      src="https://tailwindui.com/img/flags/flag-canada.svg"
+                      src="https://tailwindui.com/img/flags/flag-united-states.svg"
                       alt=""
                       className="w-5 h-auto block flex-shrink-0"
                     />
-                    <span className="ml-3 block text-sm font-medium">CAD</span>
+                    <span className="ml-3 block text-sm font-medium">USA</span>
                     <span className="sr-only">, change currency</span>
                   </a>
                 </div>
@@ -444,11 +440,11 @@ export default function Example() {
                     type="text"
                     name="account-number"
                     id="account-number"
-                    className="focus:ring-indigo-500 focus:border-indigo-500 block w-full pr-10 sm:text-sm border-gray-300 rounded-md"
+                    className="focus:ring-cyan-500 focus:border-cyan-500 block w-full pr-10 sm:text-sm border-gray-300 rounded-md"
                     placeholder="Search"
                   />
                   <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-                    <SearchIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                    <SearchIcon className="h-5 w-5 text-cyan-500" aria-hidden="true" />
                   </div>
                 </div>
                 </div>
@@ -457,10 +453,10 @@ export default function Example() {
                 <div className="ml-4 flow-root lg:ml-6">
                   <a href="#" className="group -m-2 p-2 flex items-center">
                     <ShoppingCartIcon
-                      className="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                      className="flex-shrink-0 h-6 w-6 text-cyan-500 group-hover:text-gray-500"
                       aria-hidden="true"
                     />
-                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                    <span className="ml-2 text-sm font-medium text-black group-hover:text-gray-800">0</span>
                     <span className="sr-only">items in cart, view bag</span>
                   </a>
                 </div>
@@ -469,6 +465,8 @@ export default function Example() {
           </div>
         </nav>
       </header>
+      <Secondary />
     </div>
+
   )
 }
