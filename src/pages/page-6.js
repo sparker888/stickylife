@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, UserCircleIcon, SearchIcon, ShoppingCartIcon, XIcon } from '@heroicons/react/outline'
-import Secondary from '../components/Secondary'
+import Secondary from '../components/secondary'
 
 const navigation = {
   categories: [
