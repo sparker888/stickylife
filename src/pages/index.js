@@ -26,7 +26,9 @@ const IndexPage = () => (
       <Link to="/page-5/">Go to Confirmation Page Mockup</Link><br />
       <Link to="/artist-page/">Go to Artist Page Mockup</Link><br />
       <Link to="/page-6/">Go to Alternate Navigation</Link><br />
-      <Link to="https://github.com/sparker888/stickylife">Project Repository</Link><br />
+      <Link to="https://github.com/sparker888/stickylife">Project GitHub Repository</Link><br />
+      <Link to="https://stickylife-nav.vercel.app/" className="mt-12">Final Fixed Navigation</Link><br />
+      <Link to="https://github.com/sparker888/stickylife-nav">Final Fixed Navigation GitHub Repository</Link><br />
     </p>
   </Layout>
 )
