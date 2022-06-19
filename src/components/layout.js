@@ -39,9 +39,9 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          CSS utility classes by
+          For assistance, contact:
           {` `}
-          <a href="https://tailwindcss.com/">Tailwind.</a>
+          <a href="mailto:sparker@gravitaldigital.com"className="text-purple-600 font-bold">Stephen Parker.</a>
         </footer>
       </div>
     </>

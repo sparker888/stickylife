@@ -187,7 +187,7 @@ const trendingProducts = [
     price: '100+ decal shapes to choose from.',
     href: '../page-3/',
     imageSrc: 'https://res.cloudinary.com/gravital-digital/image/upload/v1648495732/decal-application_1_fsshzf.webp',
-    imageAlt: 'Hand stitched, orange leather long wallet.',
+    imageAlt: 'Custom stickers delivered kiss-cut on individual liners.',
   },
   {
     id: 2,
