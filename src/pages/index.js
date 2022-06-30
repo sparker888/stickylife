@@ -96,10 +96,7 @@ const IndexPage = () => (
       <br />
     </h2>
     <h2 className="mt-4">
-      <Link
-        to="https://github.com/sparker888/index2"
-        className="text-purple-600 font-bold"
-      >
+      <Link to="/index2/" className="text-purple-600 font-bold">
         Warning: Experimental Page Only!!!
       </Link>
       <br />
