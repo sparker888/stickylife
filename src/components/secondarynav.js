@@ -27,7 +27,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline"
 const navigation = {
   categories: [
     {
-      name: "Stickers & Static Clings",
+      name: "Stickers & Decals",
       featured: [
         {
           name: "Vinyl Stickers",
@@ -80,7 +80,7 @@ const navigation = {
       ],
     },
     {
-      name: "Decals & Lettering",
+      name: "Signs & Banners",
       featured: [
         {
           name: "Decals",
@@ -133,7 +133,7 @@ const navigation = {
       ],
     },
     {
-      name: "Signs & Banners",
+      name: "Automotive",
       featured: [
         {
           name: "Paper Stickers",
@@ -184,163 +184,11 @@ const navigation = {
         },
       ],
     },
+
     {
       name: "Magnets",
       featured: [
         {
-          name: "Paper Stickers",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566275/competitor-image-1_iknytc.jpg",
-          imageAlt:
-            "Stickers you remember as a kid and the type your parents hated to clean up afterwards.",
-        },
-        {
-          name: "Vinyl Stickers",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566341/competitor-image-2_edwmzr.jpg",
-          imageAlt:
-            "This is what most people are likely looking for when shopping for stickers.",
-        },
-        {
-          name: "Reflective Stickers",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566369/competitor-image-3_s0jzy1.jpg",
-          imageAlt:
-            "Custom reflective stickers as an option for high visibility in low light scenarios.",
-        },
-        {
-          name: "Additional category",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566391/competitor-image-4_xmiac6.jpg",
-          imageAlt: "Custom stickers delivered kiss-cut on individual liners..",
-        },
-        {
-          name: "Additional category",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648567954/Reflective-StickerSheets_hd14ud.jpg",
-          imageAlt:
-            "Custom reflective stickers as an option for high visibility in low light scenarios.",
-        },
-        {
-          name: "Additional category",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648502160/custom-stickers_opcjbp.jpg",
-          imageAlt: "Custom stickers delivered kiss-cut on individual liners..",
-        },
-      ],
-    },
-    {
-      name: "Cars, Boats & ATVs",
-      featured: [
-        {
-          name: "Paper Stickers",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566275/competitor-image-1_iknytc.jpg",
-          imageAlt:
-            "Stickers you remember as a kid and the type your parents hated to clean up afterwards.",
-        },
-        {
-          name: "Vinyl Stickers",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566341/competitor-image-2_edwmzr.jpg",
-          imageAlt:
-            "This is what most people are likely looking for when shopping for stickers.",
-        },
-        {
-          name: "Reflective Stickers",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566369/competitor-image-3_s0jzy1.jpg",
-          imageAlt:
-            "Custom reflective stickers as an option for high visibility in low light scenarios.",
-        },
-        {
-          name: "Additional category",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566391/competitor-image-4_xmiac6.jpg",
-          imageAlt: "Custom stickers delivered kiss-cut on individual liners.",
-        },
-        {
-          name: "Additional category",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648567954/Reflective-StickerSheets_hd14ud.jpg",
-          imageAlt:
-            "Custom reflective stickers as an option for high visibility in low light scenarios.",
-        },
-        {
-          name: "Additional category",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648502160/custom-stickers_opcjbp.jpg",
-          imageAlt: "Custom stickers delivered kiss-cut on individual liners..",
-        },
-      ],
-    },
-    {
-      name: "Apparel & Tattoos",
-      featured: [
-        {
-          name: "Paper Stickers",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566275/competitor-image-1_iknytc.jpg",
-          imageAlt:
-            "Stickers you remember as a kid and the type your parents hated to clean up afterwards.",
-        },
-        {
-          name: "Vinyl Stickers",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566341/competitor-image-2_edwmzr.jpg",
-          imageAlt:
-            "This is what most people are likely looking for when shopping for stickers.",
-        },
-        {
-          name: "Reflective Stickers",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566369/competitor-image-3_s0jzy1.jpg",
-          imageAlt:
-            "Custom reflective stickers as an option for high visibility in low light scenarios.",
-        },
-        {
-          name: "Additional category",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648566391/competitor-image-4_xmiac6.jpg",
-          imageAlt: "Custom stickers delivered kiss-cut on individual liners.",
-        },
-        {
-          name: "Additional category",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648567954/Reflective-StickerSheets_hd14ud.jpg",
-          imageAlt:
-            "Custom reflective stickers as an option for high visibility in low light scenarios.",
-        },
-        {
-          name: "Additional category",
-          href: "#",
-          imageSrc:
-            "https://res.cloudinary.com/gravital-digital/image/upload/v1648502160/custom-stickers_opcjbp.jpg",
-          imageAlt: "Custom stickers delivered kiss-cut on individual liners..",
-        },
-      ],
-    },
-    {
-      name: "Dog Tags & Keychains",
-      featured: [
-        {
           name: "Additional category",
           href: "#",
           imageSrc:
@@ -389,7 +237,7 @@ const navigation = {
       ],
     },
     {
-      name: "Accessories",
+      name: "Apparel",
       featured: [
         {
           name: "Additional category",
@@ -476,7 +324,7 @@ export default function Secondary() {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
+              <Dialog.Panel className="relative max-w-xs w-full bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500 shadow-xl pb-12 flex flex-col overflow-y-auto">
                 <div className="px-4 pt-5 pb-2 flex">
                   <button
                     type="button"
@@ -557,11 +405,11 @@ export default function Secondary() {
       <header className="relative">
         <nav aria-label="Top">
           {/* Secondary navigation */}
-          <div className="bg-white">
+          <div className="bg-gradient-to-r from-purple-500 via-purple-400 to-pink-400">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="border-b border-gray-200">
-                <div className="h-8 flex-1 items-center justify-between border-0">
-                  <div className="hidden h-full lg:flex">
+                <div className="h-16 flex-1 items-center justify-between border-0">
+                  <div className="hidden h-full lg:flex justify-center flex-row">
                     {/* Flyout menus */}
                     <Popover.Group className="px-4 bottom-0 inset-x-0 justify-center">
                       <div className="h-full flex space-x-8">
@@ -576,9 +424,9 @@ export default function Secondary() {
                                   <Popover.Button
                                     className={classNames(
                                       open
-                                        ? "border-cyan-500 text-cyan-500"
-                                        : "border-transparent text-gray-700 hover:text-gray-800",
-                                      "relative z-10 flex items-center justify-center transition-colors focus:outline-none focus:border-3 ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px"
+                                        ? "border-pink-900 text-pink-900"
+                                        : "border-transparent text-white hover:text-pink-900",
+                                      "relative z-10 flex items-center justify-center transition-colors focus:outline-none focus:border-3 ease-out duration-200 text-xl font-bold border-b-2 -mb-px pt-px"
                                     )}
                                   >
                                     {category.name}
