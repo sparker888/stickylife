@@ -13,9 +13,15 @@ const IndexPage = () => (
     <p>This project is a redesign resource for Stickylife.com.</p>
     <br />
     <p>
-      The theme was developed using <a href="https://gatsbyjs.com/" className="text-purple-600">Gatsby</a>{" "}
-      and the <a href="https://tailwindcss.com" className="text-purple-600">
-      Tailwind CSS</a> utility library.
+      The theme was developed using{" "}
+      <a href="https://gatsbyjs.com/" className="text-purple-600">
+        Gatsby
+      </a>{" "}
+      and the{" "}
+      <a href="https://tailwindcss.com" className="text-purple-600">
+        Tailwind CSS
+      </a>{" "}
+      utility library.
     </p>
     <br />
     <StaticImage
@@ -27,43 +33,74 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     />
     <h2 className="mt-4">
-      <Link to="/page-2/" className="text-purple-600">Go to Home Page Mockup</Link> <br />
-    </h2>
-   <h2 className="mt-4">
-      <Link to="/page-3/" className="text-purple-600">Go to Category Page Mockup</Link>
+      <Link to="/page-2/" className="text-purple-600">
+        Go to Home Page Mockup
+      </Link>{" "}
       <br />
     </h2>
-   <h2 className="mt-4">
-      <Link to="/page-4/" className="text-purple-600">Go to Check Out Page Mockup</Link>
+    <h2 className="mt-4">
+      <Link to="/page-3/" className="text-purple-600">
+        Go to Category Page Mockup
+      </Link>
       <br />
     </h2>
-   <h2 className="mt-4">
-      <Link to="/page-5/" className="text-purple-600">Go to Confirmation Page Mockup</Link>
+    <h2 className="mt-4">
+      <Link to="/page-4/" className="text-purple-600">
+        Go to Check Out Page Mockup
+      </Link>
       <br />
     </h2>
-   <h2 className="mt-4">
-      <Link to="/artist-page/" className="text-purple-600">Go to Artist Page Mockup</Link>
+    <h2 className="mt-4">
+      <Link to="/page-5/" className="text-purple-600">
+        Go to Confirmation Page Mockup
+      </Link>
       <br />
     </h2>
-   <h2 className="mt-4">
-      <Link to="/page-6/" className="text-purple-600">Go to Alternate Navigation</Link>
+    <h2 className="mt-4">
+      <Link to="/artist-page/" className="text-purple-600">
+        Go to Artist Page Mockup
+      </Link>
       <br />
-      </h2>
-   <h2 className="mt-4">
-      <Link to="https://github.com/sparker888/stickylife" className="text-purple-600">
+    </h2>
+    <h2 className="mt-4">
+      <Link to="/page-6/" className="text-purple-600">
+        Go to Alternate Navigation
+      </Link>
+      <br />
+    </h2>
+    <h2 className="mt-4">
+      <Link
+        to="https://github.com/sparker888/stickylife"
+        className="text-purple-600"
+      >
         Project GitHub Repository
       </Link>
       <br />
-      </h2>
-   <h2 className="mt-4">
-      <Link to="https://stickylife-nav.vercel.app/" className="text-purple-600 font-bold">
+    </h2>
+    <h2 className="mt-4">
+      <Link
+        to="https://stickylife-nav.vercel.app/"
+        className="text-purple-600 font-bold"
+      >
         Final Fixed Navigation (NextJS)
       </Link>
       <br />
-      </h2>
-   <h2 className="mt-4">
-      <Link to="https://github.com/sparker888/stickylife-nav" className="text-purple-600 font-bold">
+    </h2>
+    <h2 className="mt-4">
+      <Link
+        to="https://github.com/sparker888/stickylife-nav"
+        className="text-purple-600 font-bold"
+      >
         Final Fixed Navigation GitHub Repository
+      </Link>
+      <br />
+    </h2>
+    <h2 className="mt-4">
+      <Link
+        to="https://github.com/sparker888/index2"
+        className="text-purple-600 font-bold"
+      >
+        Warning: Experimental Page Only!!!
       </Link>
       <br />
     </h2>
